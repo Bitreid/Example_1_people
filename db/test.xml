@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3306
+- Время создания: Май 18 2022 г., 14:41
+- Версия сервера: 8.0.24
+- Версия PHP: 7.4.27
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="test" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="people">
+                CREATE TABLE `people` (
+                  `id` int NOT NULL AUTO_INCREMENT,
+                  `name` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+                  `surname` mediumtext COLLATE utf8mb4_general_ci NOT NULL,
+                  `birthday` date NOT NULL,
+                  `gender` tinyint(1) NOT NULL,
+                  `city` text COLLATE utf8mb4_general_ci NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'test'
+    -->
+    <database name="test">
+        <!-- Таблица people -->
+        <table name="people">
+            <column name="id">2</column>
+            <column name="name">Ксения</column>
+            <column name="surname">Бобер</column>
+            <column name="birthday">1997-06-28</column>
+            <column name="gender">0</column>
+            <column name="city">Гомель</column>
+        </table>
+        <table name="people">
+            <column name="id">3</column>
+            <column name="name">Валерий</column>
+            <column name="surname">Астапенко</column>
+            <column name="birthday">2003-02-10</column>
+            <column name="gender">1</column>
+            <column name="city">Минск</column>
+        </table>
+        <table name="people">
+            <column name="id">5</column>
+            <column name="name">Павел</column>
+            <column name="surname">Тумилович</column>
+            <column name="birthday">1996-02-16</column>
+            <column name="gender">1</column>
+            <column name="city">Симоновичи</column>
+        </table>
+        <table name="people">
+            <column name="id">6</column>
+            <column name="name">Олег</column>
+            <column name="surname">Макаровский</column>
+            <column name="birthday">1970-06-17</column>
+            <column name="gender">1</column>
+            <column name="city">Глуск</column>
+        </table>
+        <table name="people">
+            <column name="id">7</column>
+            <column name="name">Лидия</column>
+            <column name="surname">Петрова</column>
+            <column name="birthday">2005-10-25</column>
+            <column name="gender">0</column>
+            <column name="city">Мозырь</column>
+        </table>
+        <table name="people">
+            <column name="id">11</column>
+            <column name="name">Алексей</column>
+            <column name="surname">Бобер</column>
+            <column name="birthday">1992-03-30</column>
+            <column name="gender">1</column>
+            <column name="city">Бобруйск</column>
+        </table>
+        <table name="people">
+            <column name="id">27</column>
+            <column name="name">Александр</column>
+            <column name="surname">Батрудинов</column>
+            <column name="birthday">1962-02-03</column>
+            <column name="gender">1</column>
+            <column name="city">Москва</column>
+        </table>
+        <table name="people">
+            <column name="id">28</column>
+            <column name="name">Мария</column>
+            <column name="surname">Игнатенко</column>
+            <column name="birthday">2001-08-01</column>
+            <column name="gender">0</column>
+            <column name="city">Борисов</column>
+        </table>
+    </database>
+</pma_xml_export>
